@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand Colors */
+  --color-pine-950: #0d1f17;
+  --color-pine-900: #1B3A2D;
+  --color-pine-800: #224836;
+  --color-pine-700: #2D5441;
+  --color-pine-600: #3A6B52;
+  --color-pine-500: #4A8266;
+  --color-pine-400: #5A9A7A;
+  --color-pine-300: #7DB89A;
+  --color-pine-200: #A8D4BE;
+  --color-pine-100: #D4EDE3;
+  --color-pine-50: #EEF7F2;
+
+  --color-amber-900: #6B3A10;
+  --color-amber-800: #8A4E18;
+  --color-amber-700: #A66220;
+  --color-amber-600: #C4873A;
+  --color-amber-500: #D49A52;
+  --color-amber-400: #E0B070;
+  --color-amber-300: #E8C490;
+  --color-amber-200: #F0D8B4;
+  --color-amber-100: #F8EDD8;
+  --color-amber-50: #FDF6EC;
+
+  --color-sand-900: #3D3028;
+  --color-sand-800: #5C4A3C;
+  --color-sand-700: #7A6252;
+  --color-sand-600: #9A7E6A;
+  --color-sand-500: #B89A84;
+  --color-sand-400: #CCBAAA;
+  --color-sand-300: #DDD0C4;
+  --color-sand-200: #EDE6DC;
+  --color-sand-100: #F5F0E8;
+  --color-sand-50: #FAF7F2;
+
+  --color-turquoise-700: #1E6E77;
+  --color-turquoise-600: #268896;
+  --color-turquoise-500: #2EA3B4;
+  --color-turquoise-400: #3DB8C8;
+  --color-turquoise-300: #6CCFDC;
+  --color-turquoise-200: #9FE2EC;
+  --color-turquoise-100: #CEF2F8;
+
+  /* Fonts */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #1A1410;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility classes */
+.font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+.font-heading { font-family: 'Playfair Display', Georgia, serif; }
+.font-body { font-family: 'DM Sans', system-ui, sans-serif; }
+
+.text-balance { text-wrap: balance; }
+
+/* Liquid Glass Utilities */
+.glass {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.22);
+}
+.glass-dark {
+  background: rgba(13,31,23,0.55);
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+.glass-sand {
+  background: rgba(250,247,242,0.70);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(255,255,255,0.55);
+}
+.glass-pine {
+  background: rgba(27,58,45,0.72);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(90,154,122,0.25);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(45,84,65,0.35); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(27,58,45,0.6); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

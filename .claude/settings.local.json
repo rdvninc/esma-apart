@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm cache *)",
+      "Bash(gh repo *)",
+      "WebFetch(domain:github.com)",
+      "Bash(npx uipro-cli *)",
+      "Bash(python3 *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(npx next *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Skill(run)",
+      "Bash(npx playwright *)",
+      "Bash(node *)",
+      "Bash(curl -sI -L \"https://maps.app.goo.gl/WQSyzcwo87XY8Jgg7\")",
+      "Bash(xargs sed -i '' 's/905000000000/905383999618/g; s/+90 500 000 00 00/+90 538 399 96 18/g')",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
