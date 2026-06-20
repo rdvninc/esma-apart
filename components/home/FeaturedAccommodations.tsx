@@ -38,6 +38,8 @@ const accommodations = [
   },
 ];
 
+const EASE: [number, number, number, number] = [0.32, 0.72, 0, 1];
+
 const variants = {
   enter: (dir: number) => ({
     x: dir > 0 ? "100%" : "-100%",
@@ -48,13 +50,13 @@ const variants = {
     x: 0,
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.72, ease: [0.32, 0.72, 0, 1] },
+    transition: { duration: 0.72, ease: EASE },
   },
   exit: (dir: number) => ({
     x: dir > 0 ? "-100%" : "100%",
     opacity: 0,
     scale: 0.96,
-    transition: { duration: 0.55, ease: [0.32, 0.72, 0, 1] },
+    transition: { duration: 0.55, ease: EASE },
   }),
 };
 
