@@ -39,18 +39,17 @@ export default function ReservationForm() {
     const konaklama = accommodationOptions.find((o) => o.value === data.accommodation)?.label ?? data.accommodation;
 
     const mesaj = [
-      "🏡 *YENİ REZERVASYON TALEBİ*",
-      "",
-      `👤 *Ad Soyad:* ${data.fullName}`,
-      `📧 *E-posta:* ${data.email}`,
-      `📱 *Telefon:* ${data.phone || "Belirtilmedi"}`,
-      "",
-      `🛖 *Konaklama:* ${konaklama}`,
-      `📅 *Giriş:* ${data.checkin}`,
-      `📅 *Çıkış:* ${data.checkout}`,
-      `👥 *Misafir Sayısı:* ${data.guests || "1"} kişi`,
-      "",
-      data.notes ? `📝 *Notlar:* ${data.notes}` : "",
+      "*YENİ REZERVASYON TALEBİ*",
+      "----------------------------",
+      `*Ad Soyad:* ${data.fullName}`,
+      `*E-posta:* ${data.email}`,
+      `*Telefon:* ${data.phone || "Belirtilmedi"}`,
+      "----------------------------",
+      `*Konaklama:* ${konaklama}`,
+      `*Giris:* ${data.checkin}`,
+      `*Cikis:* ${data.checkout}`,
+      `*Misafir Sayisi:* ${data.guests || "1"} kisi`,
+      data.notes ? `\n*Notlar:* ${data.notes}` : "",
     ].filter(Boolean).join("\n");
 
     const url = `https://wa.me/905383999618?text=${encodeURIComponent(mesaj)}`;
