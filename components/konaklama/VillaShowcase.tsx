@@ -6,9 +6,10 @@ import { Check } from "lucide-react";
 const features = [
   "Özel yüzme havuzu",
   "2 katlı modern mimari",
+  "3 yatak odası",
+  "Her odada klima, banyo & tuvalet",
   "Geniş özel bahçe & çim alan",
   "Tam donanımlı mutfak",
-  "2 adet yatak odası",
   "Açık hava yemek alanı",
   "Güneş şezlongu & teras",
   "Ücretsiz özel otopark",
@@ -65,7 +66,7 @@ export default function VillaShowcase() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C4873A]/12 border border-[#C4873A]/20 mb-5 w-fit">
                 <span className="w-1 h-1 rounded-full bg-[#C4873A]" />
-                <span className="font-body text-[10px] tracking-[0.28em] uppercase text-[#A66220]">Öne Çıkan · 1 Adet</span>
+                <span className="font-body text-[10px] tracking-[0.28em] uppercase text-[#A66220]">Öne Çıkan · 3 Yatak Odası</span>
               </div>
               <h2 className="font-heading text-4xl text-[#1B3A2D] mb-3">Lüks Villa</h2>
               <p className="font-body text-[#5C4A3C] text-sm leading-relaxed mb-7">
