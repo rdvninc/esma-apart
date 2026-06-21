@@ -9,9 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/8">
           {/* Brand */}
           <div className="flex flex-col gap-5">
-            <div className="bg-white rounded-2xl px-3 py-2 w-fit shadow-sm">
-              <Image src="/logo.png" alt="EsmaApart Logo" width={120} height={48} className="h-12 w-auto object-contain" />
-            </div>
+            <Image src="/logo.png" alt="EsmaApart Logo" width={130} height={52} className="h-14 w-auto object-contain" />
             <p className="font-body text-sm leading-relaxed text-white/45 max-w-xs">
               Adrasan'ın eşsiz doğasında, denize 5 dakika mesafede lüks konaklama deneyimi.
             </p>

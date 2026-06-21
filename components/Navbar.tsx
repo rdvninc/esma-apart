@@ -43,9 +43,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="cursor-pointer shrink-0">
-            <div className="bg-white rounded-xl px-2 py-1 shadow-sm">
-              <Image src="/logo.png" alt="EsmaApart Logo" width={90} height={36} className="h-9 w-auto object-contain" priority />
-            </div>
+            <Image src="/logo.png" alt="EsmaApart Logo" width={110} height={44} className="h-10 w-auto object-contain" priority />
           </Link>
 
           {/* Desktop links */}
@@ -113,9 +111,7 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className="mb-6"
             >
-              <div className="bg-white rounded-2xl px-4 py-2 shadow-md">
-                <Image src="/logo.png" alt="EsmaApart Logo" width={130} height={52} className="h-14 w-auto object-contain" />
-              </div>
+              <Image src="/logo.png" alt="EsmaApart Logo" width={150} height={60} className="h-16 w-auto object-contain" />
             </motion.div>
 
             {links.map(({ href, label }, i) => (
