@@ -44,6 +44,8 @@ export default function VillaShowcase() {
                   muted
                   loop
                   playsInline
+                  preload="none"
+                  poster="/villa.jpg"
                 />
                 <div className="absolute bottom-2 right-2 flex items-center gap-1.5 bg-black/40 backdrop-blur-sm rounded-full px-2.5 py-1">
                   <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
