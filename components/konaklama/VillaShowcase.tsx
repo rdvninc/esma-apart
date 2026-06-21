@@ -33,28 +33,27 @@ export default function VillaShowcase() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="grid grid-cols-2 gap-1 p-1"
+              className="grid grid-cols-2 grid-rows-2 gap-1 p-1"
             >
-              {/* Main large: video */}
-              <div className="col-span-2 h-64 rounded-2xl overflow-hidden relative">
-                <video
-                  src="/villa.mp4"
-                  className="absolute inset-0 w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="none"
-                  poster="/villa.jpg"
+              {/* Top left: main photo */}
+              <div className="h-64 rounded-2xl bg-cover bg-center" style={{ backgroundImage: `url('${images[0]}')` }} />
+
+              {/* Top right + bottom right: YouTube Shorts (tall) */}
+              <div className="row-span-2 rounded-2xl overflow-hidden relative bg-black" style={{ minHeight: "390px" }}>
+                <iframe
+                  src="https://www.youtube.com/embed/kW6O262MKxg?autoplay=1&mute=1&loop=1&playlist=kW6O262MKxg&controls=0&rel=0&modestbranding=1"
+                  className="absolute inset-0 w-full h-full"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  title="EsmaApart Villa Turu"
                 />
-                <div className="absolute bottom-2 right-2 flex items-center gap-1.5 bg-black/40 backdrop-blur-sm rounded-full px-2.5 py-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                  <span className="font-body text-[9px] text-white tracking-wide uppercase">Video</span>
+                <div className="absolute bottom-2 left-2 flex items-center gap-1.5 bg-black/50 backdrop-blur-sm rounded-full px-2.5 py-1 pointer-events-none">
+                  <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                  <span className="font-body text-[9px] text-white tracking-wide uppercase">Video Tur</span>
                 </div>
               </div>
 
-              {/* Bottom: photos */}
-              <div className="h-40 rounded-2xl bg-cover bg-center" style={{ backgroundImage: `url('${images[0]}')` }} />
+              {/* Bottom left: second photo */}
               <div className="h-40 rounded-2xl bg-cover bg-center" style={{ backgroundImage: `url('${images[1]}')` }} />
             </motion.div>
 
